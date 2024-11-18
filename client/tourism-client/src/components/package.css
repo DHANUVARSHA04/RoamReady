@@ -1,0 +1,213 @@
+/* Fixed navigation bar */
+.navigation-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: backdrop-filter 0.3s;
+    background-color: transparent;
+}
+
+/* Apply blur effect when navigation bar gets the 'blurred' class */
+.navigation-bar.blurred {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Navigation list styles */
+.navigation-bar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+/* Logo styles in the navbar */
+.navigation-bar ul img {
+    height: 50px;
+    width: 150px;
+    margin-right: 20px;
+}
+
+/* Navbar list item styles */
+.navigation-bar ul li {
+    padding: 10px 20px;
+}
+
+/* Make the spacer take up all available space */
+.navigation-bar ul .spacer {
+    flex-grow: 1;
+}
+
+/* Link styles in the navigation bar */
+.navigation-bar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.navigation-bar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Background image styling */
+.background_image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    position: absolute; /* Make it stay in the background */
+    top: 0;
+    left: 0;
+    z-index: -1; /* Ensure the image stays behind content */
+}
+
+/* Place the content over the background image */
+.container {
+    position: absolute;
+    z-index: 1; /* Ensure content is above the background image */
+    padding: 20px;
+    color: white; /* For text inside the container */
+}
+
+/* Places section title styling */
+h1 {
+    font-size: 2em;
+    text-align: center;
+    top: 40px; /* Adjust for spacing */
+    left: 50px;
+    z-index: 2;
+    position: absolute;
+    color: aliceblue;
+    font-family: "Anton", sans-serif;
+    margin-bottom: 40px; /* Added margin for space below the title */
+}
+.Title{
+    font-size: 2em;
+    text-align: center;
+    top: 70px; /* Adjust for spacing */
+    left: 55px;
+    z-index: 2;
+    position: absolute;
+    color: aliceblue;
+    font-family: "Anton", sans-serif;
+    margin-bottom: 40px;
+}
+/* Search bar styles */
+.search-bar {
+    display: flex;
+    justify-content: center;
+    top: 150px;  /* Adjust the margin to push it below the title */
+    position: absolute; /* Use relative positioning instead of absolute */
+    z-index: 2; /* Make sure it stays above other elements */
+    left:55px;
+}
+
+.search-bar input {
+    padding: 8px;
+    font-size: 16px;
+    width: 250px;
+    margin-right: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.search-bar button {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Package list styling */
+.package-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 20px;
+    justify-content: center;
+    margin-top: 40px; /* Adjusted margin to add space below the title */
+    position: absolute;
+    top: 140px;
+    left:35px;
+}
+
+/* Individual package card styling */
+.package-card {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for cards */
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for package cards */
+.package-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Package name styling */
+.package-name {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+/* Price styling */
+.package-price {
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Link to details styling */
+.details-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Hover effect for the details link */
+.details-link:hover {
+    text-decoration: underline;
+}
+.Buttonedit{
+    display: inline-block;
+    color:black;
+
+}
+.Add {
+    position: absolute;
+    z-index: 10; /* Ensure it's above other content */
+    background-color: #4CAF50;
+    color: white;
+    /*padding: 15px 30px;*/
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    top:145px;
+    left:35%;
+    padding: 8px 16px;
+}
+
+.Add:hover {
+    background-color: #45a049;
+}
+.add-form{
+    position: absolute;
+    top:450px;
+    color: white;
+}

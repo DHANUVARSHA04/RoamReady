@@ -1,0 +1,90 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.navigation-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: backdrop-filter 0.3s;
+    background-color: transparent;
+}
+
+.navigation-bar.blurred {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.navigation-bar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navigation-bar ul img {
+    height: 50px;
+    width: 150px;
+    margin-right: 20px;
+}
+
+.navigation-bar ul li {
+    padding: 10px 20px;
+}
+
+/* Make the spacer take up all available space */
+.navigation-bar ul .spacer {
+    flex-grow: 1;
+}
+
+.navigation-bar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.background_image {
+    width: 100%;
+    background-size: cover;
+    filter: brightness(0.7);
+    height: 500px;
+    object-fit: cover;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 0px;
+    margin: 0;
+    padding: 0;
+    top:550px;
+    position:absolute;
+    left: 10%;
+}
+
+.image-container img {
+    width: 350px;
+    height: auto;
+}
+
+
+.MAIN {
+    position: absolute;
+    top:200px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: whitesmoke; /* Optional: makes the text stand out more */
+    font-size: 3rem; /* Optional: adjust font size as needed */
+    width: 1000px;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100px;
+    align-items: center;
+    padding: 10px;
+    align-content: center;
+}

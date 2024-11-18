@@ -1,0 +1,210 @@
+/* Fixed navigation bar */
+.navigation-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: backdrop-filter 0.3s, background-color 0.3s;
+    background-color: transparent;
+    padding: 10px 20px;
+}
+
+/* Apply blur effect when navigation bar gets the 'blurred' class */
+.navigation-bar.blurred {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation list styles */
+.navigation-bar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+/* Logo styles in the navbar */
+.navigation-bar ul img {
+    height: 50px;
+    width: 150px;
+    margin-right: 20px;
+}
+
+/* Navbar list item styles */
+.navigation-bar ul li {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+/* Make the spacer take up all available space */
+.navigation-bar ul .spacer {
+    flex-grow: 1;
+}
+
+/* Link styles in the navigation bar */
+.navigation-bar ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navigation-bar ul li a:hover {
+    text-decoration: underline;
+    color: #f0f0f0;
+}
+
+/* Background image styling */
+.background_image {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.9;
+    filter: brightness(70%);
+}
+
+.package-details {
+    position: absolute;
+    top: 100px; /* Adjust to place the container vertically */
+    left: 30%; /* Center horizontally */
+    transform: translateX(-50%); /* Center adjustment */
+    padding: 40px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background */
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    width: 500px;
+    text-align: left;
+    height: 100px;
+}
+
+/* Package title styling */
+.package-details h1 {
+    font-size: 30px;
+    color: #ffffff;
+    margin-bottom: 50px; /* Space below the title */
+    top:0px;
+}
+
+/* Package details paragraph styling */
+.package-details p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #e0e0e0;
+    margin: 10px 0; /* Space between paragraphs */
+}
+.Book {
+    position: absolute;
+    z-index: 10; /* Ensure it's above other content */
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    top:100px;
+    left:60%;
+}
+
+.Book:hover {
+    background-color: #45a049;
+}
+.booking-form{
+    position: absolute;
+    z-index: 10; /* Ensure it's above other content */
+    top:150px;
+    left: 60%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #e0e0e0;
+    padding: 10px;
+}
+.Delete {
+    position: absolute;
+    z-index: 10; /* Ensure it's above other content */
+    background-color: #af4c4c;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    top:100px;
+    left:70%;
+}
+.star {
+    font-size: 24px;
+    cursor: pointer;
+    color: gray; /* Default color */
+}
+
+.star.filled {
+    color: gold; /* Color for filled stars */
+}
+
+.rating {
+    display: flex;
+    gap: 5px;
+}
+.ReviewForm{
+    top:600px;
+    position: absolute;
+}
+.review {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 100%; /* Take full width of parent container */
+    max-width: 500px; /* Optional: Limit the max width to 250px */
+    margin-bottom: 10px; /* Space between reviews */
+    padding: 5px; /* Padding inside the review card */
+    text-align: left; /* Align text to the left */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+    border: 2px solid #e0e0e0; /* Light grey border */
+    color: black;
+    
+}
+
+.review:hover {
+    transform: scale(1.05); /* Slightly scale up on hover */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+.reviews-section {
+    margin-top: 20px; /* Adjusting top margin */
+    padding: 20px; /* Adding padding inside the section */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background */
+    color: white;
+    width: 100%; /* 100% width for responsiveness */
+    max-width: 600px; /* Limit max width to 600px */
+    margin-left: auto; /* Center the reviews section */
+    margin-right: auto;
+    border-radius: 8px; /* Optional rounded corners */
+    top: 270px;
+    position: absolute;
+    left: 7%;
+}
+
+.edit-form{
+    position: absolute;
+    z-index: 10; /* Ensure it's above other content */
+    top:150px;
+    left: 60%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #e0e0e0;
+    padding: 10px;
+    height: 200px;
+}
+.ReviewForm{
+    background-color: #e0e0e0;
+    position: absolute;
+    top:300px;
+    left:100px;
+}
